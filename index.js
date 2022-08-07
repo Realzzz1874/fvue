@@ -49,17 +49,17 @@ program
               {
                 type: "input",
                 name: "name",
-                message: "please input proj name",
+                message: "please input proj name:",
               },
               {
                 type: "input",
                 name: "description",
-                message: "please input proj description",
+                message: "please input proj description:",
               },
               {
                 type: "input",
                 name: "author",
-                message: "please input proj author",
+                message: "please input proj author:",
               },
             ])
             .then(async (answers) => {
@@ -69,7 +69,8 @@ program
                 answers
               );
               fs.writeFileSync(package_path, package_result);
-              console.log("proj init success");
+              const log = chalk.hex("#FFA500");
+              console.log(logSymbols.success, log("proj init success."));
             });
         }
       }
