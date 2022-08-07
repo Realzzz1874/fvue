@@ -29,7 +29,7 @@ fvue: A fast vue project cli!
 
 And now, the tpl list is:
 
-```json
+```bash
   v3: {
     url: "github:Realzzz1874/v3-tpl#fvue-tpl/v3",
     desc: "v3-tpl",
@@ -51,3 +51,15 @@ $ fvue init v3 myVueProject
 - `myVueProject` is the project name
 
 just like:
+
+```bash
+$ fvue init v3 myVueProject
+fvue: A fast vue project cli!
+github repo: https://github.com/Realzzz1874/v3-tpl/tree/fvue-tpl/v3
+✔ tpl download success.
+✔ tpl init success.
+? please input proj name: myVueProject
+? please input proj description: my fast vue project
+? please input proj author: realzzz
+✔ proj init success.
+```
