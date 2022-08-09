@@ -8,13 +8,13 @@
 
 ```bash
 npm i vuefast -g
-# OR
-yarn add vuefast -g
 ```
 
 ### list
 
-`$ fvue list`
+```bash
+fvue list
+```
 
 eg:
 
@@ -38,11 +38,15 @@ pc: {
 
 ### init
 
-`$ fvue init <tpl> <proj>`
+```bash
+fvue init <tpl> <proj>
+```
 
 eg:
 
-`$ fvue init pc myVueProject`
+```bash
+fvue init pc myVueProject
+```
 
 - `pc` is the tpl name
 - `myVueProject` is the project name
