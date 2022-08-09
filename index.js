@@ -20,7 +20,7 @@ const TPLS = {
   },
 };
 
-program.version("1.0.3");
+program.version("1.0.4");
 program
   .command("init <tpl> <proj>")
   .description("init tpl")
