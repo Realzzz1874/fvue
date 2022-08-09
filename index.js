@@ -13,14 +13,14 @@ const log = chalk.hex("##1DBD21");
 console.log(log("fvue: A fast vue project cli!"));
 
 const TPLS = {
-  v3: {
-    url: "github:Realzzz1874/v3-tpl#fvue-tpl/v3",
-    desc: "v3-tpl",
-    repo: "https://github.com/Realzzz1874/v3-tpl/tree/fvue-tpl/v3",
+  pc: {
+    url: "github:Realzzz1874/v3-tpl#fvue-tpl/pc",
+    desc: "Vue3 PC template (Naive UI)",
+    repo: "https://github.com/Realzzz1874/v3-tpl/tree/fvue-tpl/pc",
   },
 };
 
-program.version("1.0.2");
+program.version("1.0.3");
 program
   .command("init <tpl> <proj>")
   .description("init tpl")
@@ -82,7 +82,7 @@ program
   .description("tpl list")
   .action(() => {
     for (let key in TPLS) {
-      console.log(`   - ${key} (${TPLS[key].desc})`);
+      console.log(`   - ${key} -- ${TPLS[key].desc}`);
     }
   });
 program.parse(process.argv);

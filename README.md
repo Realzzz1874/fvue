@@ -14,48 +14,45 @@ yarn add vuefast -g
 
 ### list
 
-`fvue list`
+`$ fvue list`
 
 eg:
 
 ```bash
-$ fvue list
 fvue: A fast vue project cli!
-   - v3 (v3-tpl)
+- pc -- Vue3 PC template (Naive UI)
 ```
 
-- `v3` is the tpl name
-- `v3-tpl` is the tpl description
+- `pc` is the tpl name
+- `Vue3 PC template (Naive UI)` is the tpl description
 
 And now, the tpl list is:
 
 ```bash
-  v3: {
-    url: "github:Realzzz1874/v3-tpl#fvue-tpl/v3",
-    desc: "v3-tpl",
-    repo: "https://github.com/Realzzz1874/v3-tpl/tree/fvue-tpl/v3",
-  }
+pc: {
+  url: "github:Realzzz1874/v3-tpl#fvue-tpl/pc",
+  desc: "Vue3 PC template (Naive UI)",
+  repo: "https://github.com/Realzzz1874/v3-tpl/tree/fvue-tpl/pc",
+}
 ```
 
 ### init
 
-`fvue init <tpl> <proj>`
+`$ fvue init <tpl> <proj>`
 
 eg:
 
-```bash
-$ fvue init v3 myVueProject
-```
+`$ fvue init pc myVueProject`
 
-- `v3` is the tpl name
+- `pc` is the tpl name
 - `myVueProject` is the project name
 
 just like:
 
 ```bash
-$ fvue init v3 myVueProject
+$ fvue init pc myVueProject
 fvue: A fast vue project cli!
-github repo: https://github.com/Realzzz1874/v3-tpl/tree/fvue-tpl/v3
+github repo: https://github.com/Realzzz1874/v3-tpl/tree/fvue-tpl/pc
 ✔ tpl download success.
 ✔ tpl init success.
 ? please input proj name: myVueProject
