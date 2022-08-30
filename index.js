@@ -13,14 +13,19 @@ const log = chalk.hex("##1DBD21");
 console.log(log("fvue: A fast vue project cli!"));
 
 const TPLS = {
-  pc: {
+  pc_navie: {
     url: "github:Realzzz1874/v3-tpl#fvue-tpl/pc",
     desc: "Vue3 PC template (Naive UI)",
     repo: "https://github.com/Realzzz1874/v3-tpl/tree/fvue-tpl/pc",
   },
+  pc_tailwind: {
+    url: "github:Realzzz1874/v3-tpl#fvue-tpl/pc-tailwind",
+    desc: "Vue3 PC template (tailwind)",
+    repo: "https://github.com/Realzzz1874/v3-tpl/tree/fvue-tpl/pc-tailwind",
+  },
 };
 
-program.version("1.0.4");
+program.version("1.1.0");
 program
   .command("init <tpl> <proj>")
   .description("init tpl")
